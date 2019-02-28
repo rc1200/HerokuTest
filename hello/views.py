@@ -14,6 +14,10 @@ def index(request):
     return HttpResponse('<pre>' + r.text + '</pre>')
 
 
+def index2(request):
+    return render(request, "index.html")
+
+
 def db(request):
 
     greeting = Greeting()
